@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" fill="none">
+  <rect width="192" height="192" rx="26" fill="#1F4D3D"/>
+  <path d="M36 98C36 78.1177 52.1177 62 72 62H120C139.882 62 156 78.1177 156 98V123C156 126.314 153.314 129 150 129H42C38.6863 129 36 126.314 36 123V98Z" fill="#E7F3EE"/>
+  <circle cx="65" cy="132" r="13" fill="#E7F3EE"/>
+  <circle cx="127" cy="132" r="13" fill="#E7F3EE"/>
+  <text x="96" y="111" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#1F4D3D">HD</text>
+</svg>

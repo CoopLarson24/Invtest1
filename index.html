@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1f4d3d" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Herd Directory</title>
+  </head>
+  <body>
+    <header>
+      <h1>Herd Directory</h1>
+      <p>Offline-first animal lookup synced from Supabase.</p>
+    </header>
+
+    <main>
+      <section class="toolbar">
+        <input
+          id="search"
+          type="search"
+          placeholder="Search by tag, name, breed, lot, status"
+          autocomplete="off"
+        />
+        <button id="syncButton" type="button">Sync</button>
+      </section>
+
+      <section class="status-panel">
+        <p><strong>Sync status:</strong> <span id="syncStatus">Idle</span></p>
+        <p><strong>Last sync:</strong> <span id="lastSync">Never</span></p>
+        <p><strong>Connection:</strong> <span id="connection">Checking...</span></p>
+      </section>
+
+      <section id="results" aria-live="polite"></section>
+      <template id="animalTemplate">
+        <article class="animal-card">
+          <h2 class="tag"></h2>
+          <dl>
+            <div><dt>Name</dt><dd class="name"></dd></div>
+            <div><dt>Breed</dt><dd class="breed"></dd></div>
+            <div><dt>Sex</dt><dd class="sex"></dd></div>
+            <div><dt>Birth date</dt><dd class="birthDate"></dd></div>
+            <div><dt>Lot</dt><dd class="lot"></dd></div>
+            <div><dt>Status</dt><dd class="status"></dd></div>
+            <div><dt>Pregnancy check</dt><dd class="pregnancy"></dd></div>
+          </dl>
+        </article>
+      </template>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
